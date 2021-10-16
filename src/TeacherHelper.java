@@ -57,6 +57,9 @@ public class TeacherHelper {
 			case 3:
 				
 				switch(gerador.nextInt(7)) {
+				case 0:
+					System.out.println("Que seus alunos sempre se sintam bem pra tirar as dúvidas!");
+					break;
 				case 1:
 					System.out.println("Você é um professor incrível!");
 					break;
