@@ -11,11 +11,11 @@ public class ExercicioLoop1 {
 		int quantidadeNumerosDigitados = 0;
 		double soma = 0;
 
-		while (quantidadeNumerosDigitados < 5) {
+		while (quantidadeNumerosDigitados <= 99) {
 			quantidadeNumerosDigitados++;
-			System.out.println("Por favor, digite o número " + quantidadeNumerosDigitados + ": ");
+			System.out.print("Por favor, digite o número " + quantidadeNumerosDigitados + ": ");
 			numeros = leitor.nextInt();
-			soma = numeros + numeros +numeros + numeros + numeros;
+			soma = numeros + soma;
 		}
 		System.out.println("A soma dos números é: " + soma);
 		leitor.close();
