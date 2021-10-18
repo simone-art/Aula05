@@ -6,27 +6,30 @@ public class ExercicioLoop2 {
 
 		// Faça um programa que receba 100 valores digitados pelo usuário e, ao final,
 		// informe qual é o maior deles.
-		
-		//Para fazer este programa é necessário usar arrays com o for
 
-		int[] numeros = new int[2];
+		// Para fazer este programa é melhor usar o while ao invés do for
+
+		double numeros;
+		double numeroMaior; 
+		int contador = 2;
 		Scanner leitor = new Scanner(System.in);
-		int numerosDigitadosPeloUsuario = 0;
 
-		for (int i = 0; i < numeros.length; i++) {
-			numerosDigitadosPeloUsuario++;
-			System.out.println("Por favor, digite um número " + numerosDigitadosPeloUsuario + ": ");
-			numeros[i] = leitor.nextInt();
+		System.out.print("Numero 1: ");
+		numeros = leitor.nextDouble();
+		numeroMaior = numeros;
+
+		while (contador <= 10) {
+			System.out.print("Numero " + contador + ": ");
+			numeros = leitor.nextDouble();
+
+			if (numeros > numeroMaior) {
+				numeroMaior = numeros;
 			}
-		if (numeros[0] > numeros[1]) {
-			System.out.println("o número maior é: " + numeros[0]);
-		}else {
-			System.out.println("o número maior é: " + numeros[1]);
+
+			contador++;
 		}
-		leitor.close();
+
+		System.out.println("O maior numero digitado é: " + numeroMaior);
+
 	}
 }
-
-
-
-
