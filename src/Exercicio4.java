@@ -18,6 +18,7 @@ public class Exercicio4 {
 
 			System.out.println("Informe a nota do Aluno " + notasDigitadasPeloProfessor + ": ");
 			notasAlunos[i] = scanner.nextInt();
+			
 		}
 
 		Scanner scanner1 = new Scanner(System.in);
@@ -25,10 +26,12 @@ public class Exercicio4 {
 		media = scanner1.nextDouble();
 		System.out.println("A media das notas é: " + media);
 
-		if (notasAlunos[0] > media) {
+		if (notasAlunos[0] > media || (notasAlunos[1] > media || (notasAlunos[2] > media ||(notasAlunos[3] > media ||(notasAlunos[] > media) {
 			System.out.println("O aluno 1 tem uma nota superior a média");
 		} else if(notasAlunos[1] > media){
 			System.out.println("O aluno 2 tem uma nota por baixo da média");
-		}
-	}
+		}else if(notasAlunos[2] > media){
+			System.out.println("O aluno 3 tem uma nota por baixo da média");
+	}else if(notasAlunos[3] > media){
+		System.out.println("O aluno 4 tem uma nota por baixo da média");
 }

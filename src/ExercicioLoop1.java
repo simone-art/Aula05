@@ -11,7 +11,8 @@ public class ExercicioLoop1 {
 		int quantidadeNumerosDigitados = 0;
 		double soma = 0;
 
-		while (quantidadeNumerosDigitados <= 99) {
+		//Estrutura que vai rodar 100 vezes
+		while (quantidadeNumerosDigitados <100) {
 			quantidadeNumerosDigitados++;
 			System.out.print("Por favor, digite o número " + quantidadeNumerosDigitados + ": ");
 			numeros = leitor.nextInt();
